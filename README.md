@@ -49,8 +49,9 @@ sheet.addRow(row)
 sheet .addRows([row,...])
 
 sheet.columnStyles = [
-      { cn: [1], styles: [getBorder(1, 17 + invoiceItems.length, "left")] },
-      { cn: [9, 17], styles: [getBorder(1, 1, "right"), getBorder(6, 10, "right")] }]
+      { cn: [1], styles: [{s:1,e:1,border:{right:{color:{rgb:"000000"},style:"thin"}}}] },
+       { cn: [8,26], styles: [{s:1,e:1,border:{right:{color:{rgb:"000000"},style:"thin"}}}] }
+     ]
 
 sheet.save()
 ```
